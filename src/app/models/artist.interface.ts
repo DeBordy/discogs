@@ -1,5 +1,5 @@
-import { IImage } from './image.interface.ts';
-import { IMember } from './member.interface.ts';
+import { IImage } from './image.interface';
+import { IMember } from './member.interface';
 
 export interface IArtist {
   id: number;

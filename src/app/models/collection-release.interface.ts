@@ -1,4 +1,4 @@
-import { ICollectionReleaseBasic } from './collection-release-basic.interface.ts';
+import { ICollectionReleaseBasic } from './collection-release-basic.interface';
 
 export interface ICollectionRelease {
   id: number;

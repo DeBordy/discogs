@@ -1,0 +1,40 @@
+.album-navigation {
+  margin: 5px auto;
+  max-width: 175px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    &:not(.na) {
+      svg {
+        color: black;
+      }
+      &:hover {
+        svg {
+          color: blue;
+        }
+      }
+    }
+    &.na {
+      svg {
+        color: #777;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    > * {
+      margin-right: .5rem;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    > * {
+      margin-left: .5rem;
+    }
+  }
+}

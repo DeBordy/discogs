@@ -1,0 +1,13 @@
+<div class="album-navigation">
+    <div class="left">
+      <span [ngClass]="getClasses('first')" (click)="fetchRelease('first')"><i class="fas fa-angle-double-left"></i></span>
+      <span [ngClass]="getClasses('prev')" (click)="fetchRelease('prev')"><i class="fas fa-angle-left"></i></span>
+    </div>
+    <div class="middle">
+      <span [ngClass]="getClasses('random')" (click)="randomizeRelease()"><i class="fa fa-random"></i></span>
+    </div>
+    <div class="right">
+      <span [ngClass]="getClasses('next')" (click)="fetchRelease('next')"><i class="fas fa-angle-right"></i></span>
+      <span [ngClass]="getClasses('last')" (click)="fetchRelease('last')"><i class="fas fa-angle-double-right"></i></span>
+    </div>
+</div>

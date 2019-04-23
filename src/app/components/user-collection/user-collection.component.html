@@ -1,0 +1,11 @@
+<div class="user-collection">
+  <div class="nav">
+    <discogs-album-navigation
+      [folder]="folder$ | async"
+      [collection]="collection$ | async"
+    ></discogs-album-navigation>
+  </div>
+  <div class="album">
+    <discogs-album-presentation></discogs-album-presentation>
+  </div>
+</div>

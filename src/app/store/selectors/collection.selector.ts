@@ -1,11 +1,11 @@
 import { createSelector } from '@ngrx/store';
 
 import { IAppState } from '../state/app.state';
-import { IFolderState } from '../state/folder.state';
+import { ICollectionState } from '../state/collection.state';
 
-const folderState = (state: IAppState) => state.folder;
+const collectionState = (state: IAppState) => state.collection;
 
-export const selectFolder = createSelector(
-  folderState,
-  (state: IFolderState) => state
+export const selectCollection = createSelector(
+  collectionState,
+  (state: ICollectionState) => state
 );

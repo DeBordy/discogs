@@ -1,21 +1,37 @@
-import { initialFolderState, IFolderState } from '../state/folder.state';
-import { EFolderActions, FolderActions } from '../actions/folder.actions';
+import { ICollectionState, initialCollectionState } from '../state/collection.state';
+import { ECollectionActions, CollectionActions } from '../actions/collection.actions';
 
-export const folderReducers = (
-  state: initialFolderState,
-  action: FolderActions
-): IFolderState => {
+export const collectionReducers = (
+  state: initialCollectionState,
+  action: CollectionActions
+): ICollectionState => {
   switch (action.type) {
-    case EFolderActions.GetFolder: {
+    case ECollectionActions.GetCollection: {
+      return {
+        ...state,
+        key: action.payload,
+        isFetching: true,
+      };
+    }
+    case ECollectionActions.GetCollectionSuccess: {
+      return {
+        ...state,
+        collection: {
+          ...action.payload,
+        },
+        isFetching: false,
+      };
+    }
+    case ECollectionActions.GetRandomCollection: {
       return {
         ...state,
         isFetching: true,
       };
     }
-    case EFolderActions.GetFolderSuccess: {
+    case ECollectionActions.GetRandomCollectionSuccess: {
       return {
         ...state,
-        folder: {
+        collection: {
           ...action.payload,
         },
         isFetching: false,

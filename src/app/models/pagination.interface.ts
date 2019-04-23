@@ -1,4 +1,4 @@
-import { IPaginationUrls } from './pagination-url.interface.ts';
+import { IPaginationUrls } from './pagination-url.interface';
 
 export interface IPagination {
   items: number;

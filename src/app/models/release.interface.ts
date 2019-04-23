@@ -1,12 +1,12 @@
-import { IExtraArtist } from './extra-artist.interface.ts';
-import { ICommunity } from './community.interface.ts';
-import { ICompany } from './company.interface.ts';
-import { IFormat } from './format.interface.ts';
-import { IIdentifier } from './identifier.interface.ts';
-import { IImage } from './image.interface.ts';
-import { IExtraLabel } from './extra-label.interface.ts';
-import { ITrack } from './track.interface.ts';
-import { IVideo } from './video.interface.ts';
+import { IExtraArtist } from './extra-artist.interface';
+import { ICommunity } from './community.interface';
+import { ICompany } from './company.interface';
+import { IFormat } from './format.interface';
+import { IIdentifier } from './identifier.interface';
+import { IImage } from './image.interface';
+import { IExtraLabel } from './extra-label.interface';
+import { ITrack } from './track.interface';
+import { IVideo } from './video.interface';
 
 export interface IRelease {
   id: number;

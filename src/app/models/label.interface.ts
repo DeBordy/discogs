@@ -1,5 +1,5 @@
-import { IImage } from './image.interface.ts';
-import { IExtraLabel } from './extra-label.interface.ts';
+import { IImage } from './image.interface';
+import { IExtraLabel } from './extra-label.interface';
 
 export interface ILabel {
   id: number;

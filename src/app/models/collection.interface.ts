@@ -1,5 +1,5 @@
-import { IPagination } from './pagination.interface.ts';
-import { ICollectionRelease } from './collection-release.interface.ts';
+import { IPagination } from './pagination.interface';
+import { ICollectionRelease } from './collection-release.interface';
 
 export interface ICollection {
   pagination: IPagination;

@@ -1,5 +1,5 @@
-import { IUser } from './user.interface.ts';
-import { IRating } from './rating.interface.ts';
+import { IUser } from './user.interface';
+import { IRating } from './rating.interface';
 
 export interface ICommunity {
   have: number;

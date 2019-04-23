@@ -3,15 +3,17 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { environment } from '../../environments/environment';
-import { IFolder } from '../models/folder.interface';
+import { ICollection } from '../models/collection.interface';
 
 @Injectable()
-export class FolderService {
-  folderUrl = `https://api.discogs.com/users/ausamerika/collection/folders/0`;
+export class CollectionService {
+  collectionUrl = `https://api.discogs.com/users/ausamerika/collection/folders/0/releases?per_page=1`;
 
-  constructor(private _http: HttpClient) { }
+  constructor(
+    private _http: HttpClient
+  ) { }
 
-  getFolder(): Observable<IFolder> {
-    return this._http.get<IFolder>(this.folderUrl);
+  getCollection(page): Observable<ICollection> {
+    return this._http.get<ICollection>(`${this.collectionUrl}&page=${page}`);
   }
 }

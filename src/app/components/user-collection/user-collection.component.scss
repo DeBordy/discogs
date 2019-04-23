@@ -1,0 +1,11 @@
+.user-collection {
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    background-color: #dddddd;
+  }
+  .album {
+    padding: 0 25px;
+  }
+}

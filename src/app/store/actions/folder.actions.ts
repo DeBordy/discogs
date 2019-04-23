@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 
-import {IFolder} from '../../app/models/folder.interface';
+import { IFolder } from '../../models/folder.interface';
 
 export enum EFolderActions {
   GetFolder = '[Folder] Get Folder',

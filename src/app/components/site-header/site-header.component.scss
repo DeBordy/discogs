@@ -1,0 +1,15 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #424242;
+  color: #dddddd;
+  padding: 15px 25px;
+
+  i,svg {
+    color: #dddddd;
+  }
+  .site-logo svg {
+    font-style: italic;
+    transform: translate(-56%, 70%);
+  }
+}

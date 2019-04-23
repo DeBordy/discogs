@@ -1,0 +1,29 @@
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #424242;
+  color: #dddddd;
+  padding: 15px 25px;
+
+  svg {
+    color: #dddddd;
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .copy {
+    display: flex;
+    justify-content: flex-start;
+    * {
+      margin-right: .5rem;
+    }
+  }
+  .author-info {
+    display: flex;
+    justify-content: flex-end;
+    > * {
+      margin-left: .5rem;
+    }
+  }
+}

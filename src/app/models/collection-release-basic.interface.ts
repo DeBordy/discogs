@@ -1,6 +1,6 @@
-import { IExtraArtist } from './extra-artist.interface.ts';
-import { IFormat } from './format.interface.ts';
-import { IExtraLabel } from './extra-label.interface.ts';
+import { IExtraArtist } from './extra-artist.interface';
+import { IFormat } from './format.interface';
+import { IExtraLabel } from './extra-label.interface';
 
 export interface ICollectionReleaseBasic {
   id: number;

@@ -1,7 +1,7 @@
-import { IExtraArtist } from './extra-artist.interface.ts';
-import { IImage } from './image.interface.ts';
-import { ITrack } from './track.interface.ts';
-import { IVideo } from './video.interface.ts';
+import { IExtraArtist } from './extra-artist.interface';
+import { IImage } from './image.interface';
+import { ITrack } from './track.interface';
+import { IVideo } from './video.interface';
 
 export interface IMaster {
   id: number;

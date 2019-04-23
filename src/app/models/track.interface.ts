@@ -1,4 +1,4 @@
-import { IExtraArtist } from './extra-artist.interface.ts';
+import { IExtraArtist } from './extra-artist.interface';
 
 export interface ITrack {
   duration: string;

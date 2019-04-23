@@ -1,11 +1,11 @@
-import { IFolder } from '../../models/folder.interface';
+import { ICollection } from '../../models/collection.interface';
 
-export interface IFolderState {
-  folder: IFolder;
+export interface ICollectionState {
+  collection: ICollection;
   isFetching: boolean;
 }
 
-export const initialFolderState: IFolderState = {
-  folder: null,
+export const initialCollectionState: ICollectionState = {
+  collection: null,
   isFetching: false
 };
