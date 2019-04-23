@@ -1,0 +1,46 @@
+import { IExtraArtist } from './extra-artist.interface.ts';
+import { ICommunity } from './community.interface.ts';
+import { ICompany } from './company.interface.ts';
+import { IFormat } from './format.interface.ts';
+import { IIdentifier } from './identifier.interface.ts';
+import { IImage } from './image.interface.ts';
+import { IExtraLabel } from './extra-label.interface.ts';
+import { ITrack } from './track.interface.ts';
+import { IVideo } from './video.interface.ts';
+
+export interface IRelease {
+  id: number;
+  artist_sort: string;
+  country: string;
+  data_quality: string;
+  date_added: string;
+  date_changed: string;
+  estimated_weight: number;
+  format_quantity: number;
+  genres: string[];
+  lowest_price: number;
+  master_id: number;
+  master_url: string;
+  notes: string;
+  num_for_sale: number;
+  released: string;
+  released_formatted: string;
+  resource_url: string;
+  series: any[];
+  status: string;
+  styles: string[];
+  thumb: string;
+  title: string;
+  uri: string;
+  year: number;
+  artists: IExtraArtist[];
+  community: ICommunity;
+  companies: ICompany[];
+  extraartist: IExtraArtist[];
+  formats: IFormat[];
+  identifiers: IIdentifier[];
+  images: IImage[];
+  labels: IExtraLabel[];
+  tracklist: ITrack[];
+  videos: IVideo[];
+}
