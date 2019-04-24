@@ -1,8 +1,8 @@
-import { IFolderState, initialFolderState } from '../state/folder.state';
+import { IFolderState } from '../state/folder.state';
 import { EFolderActions, FolderActions } from '../actions/folder.actions';
 
 export const folderReducers = (
-  state: initialFolderState,
+  state: IFolderState,
   action: FolderActions
 ): IFolderState => {
   switch (action.type) {

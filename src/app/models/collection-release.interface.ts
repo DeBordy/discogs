@@ -5,5 +5,5 @@ export interface ICollectionRelease {
   date_added: string;
   instance_id: number;
   rating: number;
-  basic_information: ICollectionReleaseBasic[];
+  basic_information: ICollectionReleaseBasic;
 }

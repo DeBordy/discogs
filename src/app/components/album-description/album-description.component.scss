@@ -1,0 +1,40 @@
+#album-description {
+  display: flex;
+  flex-direction: column;
+
+  .album-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .album-year {
+      margin-right: .25rem;
+
+      &:after {
+        content: ".";
+      }
+    }
+  }
+  .album-artists {
+
+  }
+  .album-formats {
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      .album-format-descriptions {
+        margin-left: .25rem;
+        font-style: italic;
+
+        &:before {
+          content: "(";
+        }
+        &:after {
+          content: ')';
+        }
+      }
+    }
+  }
+}

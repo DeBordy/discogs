@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { ICollectionState } from '../../store/state/collection.state';
+import { IFolderState } from '../../store/state/folder.state';
 
 @Component({
   selector: 'discogs-album-presentation',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./album-presentation.component.scss']
 })
 export class AlbumPresentationComponent implements OnInit {
+  @Input()
+  collection: ICollectionState;
+  @Input()
+  folder: IFolderState;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  isLoading() {
+    return !this.folder.isFetching && !this.collection.isFetching;
+  }
 }

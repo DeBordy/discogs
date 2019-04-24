@@ -1,13 +1,13 @@
 import { RouterReducerState } from '@ngrx/router-store';
 
 import { IFolderState, initialFolderState } from './folder.state';
-import { ICollectionState, initialCollectionState } from "./collection.state";
+import { ICollectionState, initialCollectionState } from './collection.state';
 
 export interface IAppState {
   router?: RouterReducerState;
   folder: IFolderState;
-  collection: ICollectionState
-}
+  collection: ICollectionState;
+};
 
 export const initialAppState: IAppState = {
   folder: initialFolderState,
@@ -16,4 +16,4 @@ export const initialAppState: IAppState = {
 
 export function getInitialState(): IAppState {
   return initialAppState;
-}
+};

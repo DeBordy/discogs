@@ -1,8 +1,8 @@
-import { ICollectionState, initialCollectionState } from '../state/collection.state';
+import { ICollectionState } from '../state/collection.state';
 import { ECollectionActions, CollectionActions } from '../actions/collection.actions';
 
 export const collectionReducers = (
-  state: initialCollectionState,
+  state: ICollectionState,
   action: CollectionActions
 ): ICollectionState => {
   switch (action.type) {

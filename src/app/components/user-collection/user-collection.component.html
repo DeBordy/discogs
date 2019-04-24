@@ -6,6 +6,9 @@
     ></discogs-album-navigation>
   </div>
   <div class="album">
-    <discogs-album-presentation></discogs-album-presentation>
+    <discogs-album-presentation
+      [folder]="folder$ | async"
+      [collection]="collection$ | async"
+    ></discogs-album-presentation>
   </div>
 </div>
