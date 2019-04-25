@@ -1,10 +1,10 @@
 import { IFolderState } from '../state/folder.state';
 import { EFolderActions, FolderActions } from '../actions/folder.actions';
 
-export const folderReducers = (
+export function folderReducers(
   state: IFolderState,
   action: FolderActions
-): IFolderState => {
+): IFolderState {
   switch (action.type) {
     case EFolderActions.GetFolder: {
       return {
@@ -24,4 +24,4 @@ export const folderReducers = (
     default:
       return state;
   }
-}
+};

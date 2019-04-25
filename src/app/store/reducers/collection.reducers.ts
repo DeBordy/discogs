@@ -1,10 +1,10 @@
 import { ICollectionState } from '../state/collection.state';
 import { ECollectionActions, CollectionActions } from '../actions/collection.actions';
 
-export const collectionReducers = (
+export function collectionReducers(
   state: ICollectionState,
   action: CollectionActions
-): ICollectionState => {
+): ICollectionState {
   switch (action.type) {
     case ECollectionActions.GetCollection: {
       return {
@@ -40,4 +40,4 @@ export const collectionReducers = (
     default:
       return state;
   }
-}
+};
